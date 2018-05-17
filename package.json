@@ -3,6 +3,9 @@
   "description": "Field Arrays Example using Redux Form",
   "version": "0.0.32",
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
     "jest": "^22.4.3",
     "react": "15.6.1",
     "react-dom": "15.6.1",

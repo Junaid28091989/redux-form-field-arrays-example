@@ -1,4 +1,5 @@
 const validate = values => {
+  console.log("values --------------> ", values);
   const errors = {};
   if (!values.clubName) {
     errors.clubName = 'Required';
@@ -41,7 +42,9 @@ const validate = values => {
       errors.members = membersArrayErrors;
     }
   }
-  return errors;
+
+  console.log("errors -------------> ",   JSON.stringify(errors) )
+  return JSON.stringify(errors) ;
 };
 
 export default validate;

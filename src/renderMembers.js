@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Field, FieldArray } from 'redux-form'; 
 
-import renderField from './renderField';
+import RenderField from './renderField';
 
 import renderHobbies from './renderHobbies';
 
@@ -23,13 +23,13 @@ const renderMembers = ({ fields, meta: { touched, error, submitFailed } }) => (
         <Field
           name={`${member}.firstName`}
           type="text"
-          component={renderField}
+          component={RenderField}
           label="First Name"
         />
         <Field
           name={`${member}.lastName`}
           type="text"
-          component={renderField}
+          component={RenderField}
           label="Last Name"
         />
         <FieldArray name={`${member}.hobbies`} component={renderHobbies} />

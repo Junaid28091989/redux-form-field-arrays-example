@@ -1,15 +1,15 @@
 import React from 'react';
-import renderField from './renderField';
+import RenderField from './renderField';
 
 import {Field} from 'redux-form';
 
 const renderHobbies = ({ fields, meta: { error } }) => (
   <ul>
-    {
-    // <li>
-    //   <button type="button" onClick={() => fields.push()}>Add Hobby</button>
-    // </li>
-    }
+    
+    <li>
+      <button type="button" onClick={() => fields.push()}>Add Hobby</button>
+    </li>
+    
     {fields.map((hobby, index) => (
       <li key={index}>
         <button
@@ -20,7 +20,7 @@ const renderHobbies = ({ fields, meta: { error } }) => (
         <Field
           name={hobby}
           type="text"
-          component={renderField}
+          component={RenderField}
           label={`Hobby #${index + 1}`}
         />
       </li>

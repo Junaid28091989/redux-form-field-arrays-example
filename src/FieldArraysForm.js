@@ -2,7 +2,7 @@ import React from 'react';
 import { Field, FieldArray, reduxForm } from 'redux-form';
 import validate from './validate';
 
-import renderField from './renderField';
+import RenderField from './renderField';
 // import renderHobbies from './renderHobbies';
 
 import renderMembers from './renderMembers';
@@ -14,7 +14,7 @@ const FieldArraysForm = props => {
       <Field
         name="Team Name"
         type="text"
-        component={renderField}
+        component={RenderField}
         label="Team name"
       />
       <FieldArray name="members" component={renderMembers} />
